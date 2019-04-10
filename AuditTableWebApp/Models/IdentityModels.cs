@@ -29,5 +29,7 @@ namespace AuditTableWebApp.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Audit> AuditRecords { get; set; }
     }
 }
