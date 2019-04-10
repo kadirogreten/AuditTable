@@ -1,6 +1,10 @@
 # Audit Table For Asp.Net MVC
 Implementing Audit Trails using ASP.NET MVC ActionFilters
 
+
+The audit table shows which IP address the people have entered into the website, which user name they entered, which browser they used, which pages were clicked on the website.
+
+
 # 1- Create a Audit Model
 
     public class Audit
