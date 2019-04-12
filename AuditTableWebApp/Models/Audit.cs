@@ -33,14 +33,18 @@ namespace AuditTableWebApp.Models
             {
                 // Your Audit Identifier     
                 AuditID = Guid.NewGuid(),
+
                 // Our Username (if available)
                 UserName = (request.IsAuthenticated) ? filterContext.HttpContext.User.Identity.Name : "Anonymous",
+
                 // The IP Address of the Request
                 IPAddress = request.ServerVariables["HTTP_X_FORWARDED_FOR"] ?? request.UserHostAddress,
+
                 Browser = request.Browser.Browser,
 
                 // The URL that was accessed
                 AreaAccessed = request.RawUrl,
+
                 // Creates our Timestamp
                 Timestamp = DateTime.Now
             };
