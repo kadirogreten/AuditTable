@@ -22,7 +22,6 @@ namespace AuditTableWebApp.Models
 
     }
 
-
     public class AuditAttribute : ActionFilterAttribute
     {
         public override void OnActionExecuting(ActionExecutingContext filterContext)
